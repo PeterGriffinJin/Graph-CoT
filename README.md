@@ -25,12 +25,15 @@ However, in real-world scenarios, text units are generally interconnected, formi
 
 This motivates the research on how to augment LLMs with such structured text corpora.
 
+<p align="center">
+  <img src="intro.png" width="400px"/>
+</p>
+
 
 ## Graph Reasoning Benchmark (GRBench)
 GRBench is a comprehensive benchmark dataset to support the development of methodology and facilitate the evaluation of the proposed models for **Augmenting Large Language Models with External Textual Graphs**.
 
 GRBENCH includes 10 real-world graphs that can serve as external knowledge sources for LLMs from five domains including academic, e-commerce, literature, healthcare, and legal domains. Each sample in GRBENCH consists of a manually designed question and an answer, which can be directly answered by referring to the graphs or retrieving the information from the graphs as context. To make the dataset comprehensive, we include samples of different difficulty levels: easy questions (which can be answered with single-hop reasoning on graphs), medium questions (which necessitate multi-hop reasoning on graphs), and hard questions (which call for inductive reasoning with information on graphs as context).
-
 
 <p align="center">
   <img src="data.png" width="300px"/>
