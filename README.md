@@ -5,8 +5,8 @@ This repository contains the source code and datasets for [Graph Chain-of-Though
 ## Links
 
 - [Requirements](#requirements)
-- [Overview](#overview)
-- [Edge Representation Learning](#edge-representation-learning-edgeformer-e)
+- [Motivation](#motivation)
+- [Graph Reasoning Benchmark (GRBench)](#graph-reasoning-benchmark-(grbench))
 - [Node Representation Learning](#node-representation-learning-edgeformer-n)
 - [Citations](#citations)
 
@@ -33,7 +33,7 @@ This motivates the research on how to augment LLMs with such structured knowledg
 ## Graph Reasoning Benchmark (GRBench)
 GRBench is a comprehensive benchmark dataset to support the development of methodology and facilitate the evaluation of the proposed models for **Augmenting Large Language Models with External Textual Graphs**.
 
-GRBENCH includes 10 real-world graphs that can serve as external knowledge sources for LLMs from five domains including *academic, e-commerce, literature, healthcare, and legal domains*. Each sample in GRBENCH consists of a manually designed question and an answer, which can be directly answered by referring to the graphs or retrieving the information from the graphs as context. To make the dataset comprehensive, we include samples of different difficulty levels: easy questions (which can be answered with single-hop reasoning on graphs), medium questions (which necessitate multi-hop reasoning on graphs), and hard questions (which call for inductive reasoning with information on graphs as context).
+GRBench includes 10 real-world graphs that can serve as external knowledge sources for LLMs from five domains including *academic, e-commerce, literature, healthcare, and legal domains*. Each sample in GRBench consists of a manually designed question and an answer, which can be directly answered by referring to the graphs or retrieving the information from the graphs as context. To make the dataset comprehensive, we include samples of different difficulty levels: easy questions (which can be answered with single-hop reasoning on graphs), medium questions (which necessitate multi-hop reasoning on graphs), and hard questions (which call for inductive reasoning with information on graphs as context).
 
 <p align="center">
   <img src="data.png" width="300px"/>
@@ -43,8 +43,19 @@ You can directly download the processed graph [here](https://drive.google.com/dr
 
 Detailed information of the raw data and how this benchmark is constructed can be found in [here](https://github.com/PeterGriffinJin/Graph-CoT/tree/main/data).
 
+Notes: GRBench is also a potential benchmark for researchers to study LLMs as agents with graphs as environments.
+
 ## Graph CoT
-xxxx
+We propose a simple and effective framework called Graph Chain-of-thought (Graph-CoT). The main idea is to enable LLMs to traverse the graph step-by-step to figure out the key information needed, rather than directly feeding the whole subgraph as context into the LLMs. 
+
+Graph-CoT is an iterative framework, where one iteration corresponds to one step on the graph. Each iteration in Graph-CoT consists of three sub-steps: 
+
+1) *Reasoning*: LLMs propose what conclusion we can make with the current information and what further information is needed from the graph; 
+2) *Interaction*: LLMs generate the interactions needed to fetch information from the graph (e.g., finding the nodes, checking the neighbors, etc); 
+3) *Execution*: The requests from the interaction step are executed on the graph and the corresponding information is returned.
+
+In this way, LLMs can conduct chain-based reasoning on the graph and find the key information on the graph.
+This process will be iterated until LLMs conclude the final answer in the reasoning sub-step.
 
 <p align="center">
   <img src="GraphCoT.png" width="600px"/>
@@ -52,8 +63,7 @@ xxxx
 
 
 
-
-## Models & Evaluation
+## Experiments
 
 ### Run the models
 Opensource LLMs (with its RAG version): ``LLM/``.
