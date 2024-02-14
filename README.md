@@ -6,8 +6,9 @@ This repository contains the source code and datasets for [Graph Chain-of-Though
 
 - [Requirements](#requirements)
 - [Motivation](#motivation)
-- [Graph Reasoning Benchmark (GRBench)](#graph-reasoning-benchmark-(grbench))
-- [Node Representation Learning](#node-representation-learning-edgeformer-n)
+- [Graph Reasoning Benchmark (GRBench)](#graph-reasoning-benchmark-grbench)
+- [Graph CoT](#graph-cot)
+- [Experiments](#experiments)
 - [Citations](#citations)
 
 ## Requirements
@@ -81,4 +82,11 @@ Remeber to change all the ``DATASET`` to your dataset name.
 
 ```
 bash eval.sh
+```
+
+## Citations
+
+Please cite the following paper if you find the benchmark and code helpful for your research.
+```
+
 ```
