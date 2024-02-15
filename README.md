@@ -27,7 +27,7 @@ However, in real-world scenarios, text units are generally **interconnected**, f
 This motivates the research on how to augment LLMs with such structured knowledge sources.
 
 <p align="center">
-  <img src="intro.png" width="400px"/>
+  <img src="fig/intro.png" width="400px"/>
 </p>
 
 
@@ -37,7 +37,7 @@ GRBench is a comprehensive benchmark dataset to support the development of metho
 GRBench includes 10 real-world graphs that can serve as external knowledge sources for LLMs from five domains including *academic, e-commerce, literature, healthcare, and legal domains*. Each sample in GRBench consists of a manually designed question and an answer, which can be directly answered by referring to the graphs or retrieving the information from the graphs as context. To make the dataset comprehensive, we include samples of different difficulty levels: easy questions (which can be answered with single-hop reasoning on graphs), medium questions (which necessitate multi-hop reasoning on graphs), and hard questions (which call for inductive reasoning with information on graphs as context).
 
 <p align="center">
-  <img src="data.png" width="300px"/>
+  <img src="fig/data.png" width="300px"/>
 </p>
 
 You can directly download the processed graph [here](https://drive.google.com/drive/folders/1DJIgRZ3G-TOf7h0-Xub5_sE4slBUEqy9?usp=share_link) and save them to `data/processed_data/{data_name}`. The data for each domain can be found in `data/processed_data/{data_name}/data.json`.
@@ -59,18 +59,23 @@ In this way, LLMs can conduct chain-based reasoning on the graph and find the ke
 This process will be iterated until LLMs conclude the final answer in the reasoning sub-step.
 
 <p align="center">
-  <img src="GraphCoT.png" width="600px"/>
+  <img src="fig/GraphCoT.png" width="600px"/>
 </p>
 
 
 ## Experiments
 
-### Run the models
+### Run Graph CoT
+
+Graph CoT: ``Graph-CoT/``.
+
+You can refer to the ``README.md`` inside each folder to know how to run the models. **Remember to change some of the bash variables first.**
+
+### Run baselines
+
 Opensource LLMs (with its RAG version): ``LLM/``.
 
 GPT models (with its RAG version): ``GPT/``.
-
-Graph CoT: ``Graph-CoT/``.
 
 You can refer to the ``README.md`` inside each folder to know how to run the models. **Remember to change some of the bash variables first.**
 
