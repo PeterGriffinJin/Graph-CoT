@@ -71,7 +71,7 @@ Graph CoT: ``Graph-CoT/``.
 
 You can refer to the ``README.md`` inside each folder to know how to run the models. **Remember to change some of the bash variables first.**
 
-### Run baselines
+### Run Baselines
 
 Opensource LLMs (with its RAG version): ``LLM/``.
 
