@@ -1,5 +1,5 @@
 ### Raw data
-Download raw data with wget
+Download raw data with wget. ``web_data_dir`` for each dataset can be found [here](https://github.com/PeterGriffinJin/Graph-CoT/tree/main/data/raw_data).
 ```
 cd data/raw_data/{data_name}
 wget web_data_dir
@@ -45,13 +45,13 @@ venue_nodes:{
 ```
 
 ### Design question answering pairs for each dataset
-Write question templates
+Manually designed question templates and automatic answer generation.
 ```
 cd data/processed_data/{data_name}
 design_questions.ipynb
 ```
 
-Enrich the question expression with GPT
+Diversify the question expressions with GPT4.
 ```
 cd ..
 generate_sample.ipynb
