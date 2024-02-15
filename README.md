@@ -63,7 +63,6 @@ This process will be iterated until LLMs conclude the final answer in the reason
 </p>
 
 
-
 ## Experiments
 
 ### Run the models
@@ -78,7 +77,7 @@ You can refer to the ``README.md`` inside each folder to know how to run the mod
 ### Evaluation
 Currently, we support both rule-based evaluation (e.g., EM, BLEU and ROUGE) and model-based evaluation (GPT4 as evaluator).
 
-Remeber to change all the ``DATASET`` to your dataset name.
+Remember to change all the ``DATASET`` to your dataset name and give your key to ``openai_key``.
 
 ```
 bash eval.sh

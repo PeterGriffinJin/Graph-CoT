@@ -1,5 +1,5 @@
 
-## GPT 3.5
+## GPT3.5-turbo / GPT-4
 Remember to change ``DATASET`` to your domain name.
 
 ### Direct Inference

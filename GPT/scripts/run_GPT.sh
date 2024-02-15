@@ -1,14 +1,12 @@
-OPENAI_KEY=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
+OPENAI_KEY=xxx
 gpt_version=gpt-3.5-turbo
 
-# DATASET=amazon
-# DATA_FILE=/shared/data3/bowenj4/llm-graph-plugin/data/processed_data/$DATASET/data.json
-# SAVE_FILE=/shared/data3/bowenj4/llm-graph-plugin/GPT/results/$gpt_version/$DATASET/results.jsonl
+DATASET=amazon # legal, biomedical, amazon, goodreads, dblp
+DATA_FILE=/shared/data3/bowenj4/llm-graph-plugin/data/processed_data/$DATASET/data.json
+SAVE_FILE=/shared/data3/bowenj4/llm-graph-plugin/GPT/results/$gpt_version/$DATASET/results.jsonl
 
 DATASET=maple
-# DOMAIN=Biology
-for DOMAIN in Biology Chemistry Materials_Science Medicine Physics
-do
+DOMAIN=Biology # Biology, Chemistry, Materials_Science, Medicine, Physics
 DATA_FILE=/shared/data3/bowenj4/llm-graph-plugin/data/processed_data/maple/$DOMAIN/data.json
 SAVE_FILE=/shared/data3/bowenj4/llm-graph-plugin/GPT/results/$gpt_version/maple-$DOMAIN/results.jsonl
 
@@ -17,4 +15,3 @@ python ../code/run_GPT.py --dataset $DATASET \
                         --data_file $DATA_FILE \
                         --save_file $SAVE_FILE \
                         --openai_key $OPENAI_KEY
-done
