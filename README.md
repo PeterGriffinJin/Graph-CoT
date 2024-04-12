@@ -45,7 +45,9 @@ GRBench includes 10 real-world graphs that can serve as external knowledge sourc
   <img src="fig/data.png" width="300px"/>
 </p>
 
-You can directly download the processed graph [here](https://drive.google.com/drive/folders/1DJIgRZ3G-TOf7h0-Xub5_sE4slBUEqy9?usp=share_link) and save them to `data/processed_data/{data_name}`. The data for each domain can be found in `data/processed_data/{data_name}/data.json`.
+You can directly download the graph environement files [here](https://drive.google.com/drive/folders/1DJIgRZ3G-TOf7h0-Xub5_sE4slBUEqy9?usp=share_link) and save them to `data/processed_data/{data_name}`.
+
+You can access the question answering dataset for each domain [here](https://huggingface.co/datasets/PeterJinGo/GRBench). They can also be found in `data/processed_data/{data_name}/data.json`.
 
 Detailed information of the raw data and how this benchmark is constructed can be found in [here](https://github.com/PeterGriffinJin/Graph-CoT/tree/main/data).
 
