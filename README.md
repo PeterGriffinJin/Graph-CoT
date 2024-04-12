@@ -3,6 +3,7 @@
 <div align="center">
   <img src="fig/hf-logo.svg" width="15" height="15" /> <a href="https://huggingface.co/datasets/PeterJinGo/GRBench">dataset</a> 📖 <a href="https://arxiv.org/pdf/2404.07103.pdf">arxiv</a>
 </div>
+&nbsp;
 
 This repository contains the source code and datasets for [Graph Chain-of-Thought: Augmenting Large Language Models by Reasoning on Graphs]().
 
