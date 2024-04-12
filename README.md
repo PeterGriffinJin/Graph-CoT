@@ -5,7 +5,7 @@
 </div>
 &nbsp;
 
-This repository contains the source code and datasets for [Graph Chain-of-Thought: Augmenting Large Language Models by Reasoning on Graphs]().
+This repository contains the source code and datasets for [Graph Chain-of-Thought: Augmenting Large Language Models by Reasoning on Graphs](https://arxiv.org/pdf/2404.07103.pdf).
 
 ## Links
 
@@ -106,3 +106,6 @@ Please cite the following paper if you find the benchmark and code helpful for y
   year={2024}
 }
 ```
+
+## Acknowledge
+Some codes are adapted from [ToolQA](https://github.com/night-chen/ToolQA). Huge thanks to the contributors of the amazing repository!
