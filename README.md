@@ -1,5 +1,5 @@
 # Graph Chain-of-Thought
-<img src="fig/hf-logo.svg" width="15" height="15" /> [[dataset]([PDF](https://arxiv.org/abs/2304.11116)])] 📖 [[arxiv]([PDF](https://arxiv.org/pdf/2404.07103.pdf)])]
+<img src="fig/hf-logo.svg" width="15" height="15" /> [[dataset](https://arxiv.org/abs/2304.11116)] 📖 [[arxiv](https://arxiv.org/pdf/2404.07103.pdf)]
 
 This repository contains the source code and datasets for [Graph Chain-of-Thought: Augmenting Large Language Models by Reasoning on Graphs]().
 
