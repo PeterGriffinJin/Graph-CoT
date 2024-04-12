@@ -22,7 +22,7 @@ datetime_string = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
 
 parser = argparse.ArgumentParser("")
 parser.add_argument("--dataset", type=str, default="dblp")
-parser.add_argument("--openai_api_key", type=str, default="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")
+parser.add_argument("--openai_api_key", type=str, default="xxx")
 parser.add_argument("--path", type=str)
 parser.add_argument("--save_file", type=str)
 parser.add_argument("--embedder_name", type=str, default="sentence-transformers/all-mpnet-base-v2")
