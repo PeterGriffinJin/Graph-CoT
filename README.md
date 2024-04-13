@@ -99,9 +99,9 @@ bash eval.sh
 
 Please cite the following paper if you find the benchmark and code helpful for your research.
 ```
-@article{jin2023graph,
+@article{jin2024graph,
   title={Graph Chain-of-Thought: Augmenting Large Language Models by Reasoning on Graphs},
-  author={Jin, Bowen and Xie, Chulin and Zhang, Jiawei and Roy, Kashob and Zhang, Yu and Wang, Suhang and Meng, Yu and Han, Jiawei},
+  author={Jin, Bowen and Xie, Chulin and Zhang, Jiawei and Roy, Kashob Kumar and Zhang, Yu and Wang, Suhang and Meng, Yu and Han, Jiawei},
   journal={arXiv preprint arXiv:2404.07103},
   year={2024}
 }
