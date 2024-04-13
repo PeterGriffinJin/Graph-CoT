@@ -1,0 +1,1 @@
+hetionet-v1.0.json
