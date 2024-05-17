@@ -5,7 +5,7 @@
 </div>
 &nbsp;
 
-This repository contains the source code and datasets for [Graph Chain-of-Thought: Augmenting Large Language Models by Reasoning on Graphs](https://arxiv.org/pdf/2404.07103.pdf).
+This repository contains the source code and datasets for [Graph Chain-of-Thought: Augmenting Large Language Models by Reasoning on Graphs](https://arxiv.org/pdf/2404.07103.pdf) accepted to ACL 2024.
 
 ## Links
 
