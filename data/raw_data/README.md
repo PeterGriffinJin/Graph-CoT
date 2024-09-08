@@ -1,7 +1,7 @@
 
 ## Raw data
 
-amazon: http://snap.stanford.edu/data/amazon/productGraph/metadata.json.gz
+amazon: http://snap.stanford.edu/data/amazon/productGraph/metadata.json.gz, http://snap.stanford.edu/data/amazon/productGraph/user_dedup.json.gz, http://snap.stanford.edu/data/amazon/productGraph/item_dedup.json.gz
 
 dblp: https://originalfileserver.aminer.cn/misc/dblp_v14.tar.gz
 
