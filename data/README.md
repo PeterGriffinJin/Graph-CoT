@@ -19,7 +19,7 @@ cd data/raw_data/{data_name}
 ```
 Run the cells in raw_process.ipynb
 
-The script will process the raw data and save it as a graph.pkl file.
+The script will process the raw data and save it as a graph.json file.
 ```
 graph.pkl:{
     type1_nodes (Dict),
