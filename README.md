@@ -24,7 +24,7 @@ The code is written in Python 3.8. Before running, you need to first install the
 conda create --name graphcot python==3.8
 conda activate graphcot
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
-conda install -c pytorch -c nvidia faiss-gpu=1.7.4
+conda install -c pytorch -c nvidia faiss-gpu=1.7.3
 pip3 install -r requirements.txt
 ```
 
